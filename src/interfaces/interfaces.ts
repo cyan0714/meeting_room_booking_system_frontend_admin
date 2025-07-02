@@ -43,11 +43,11 @@ axiosInstance.interceptors.response.use(
 async function refreshToken() {
   const res = await axiosInstance.get('/user/admin/refresh', {
     params: {
-      refresh_token: localStorage.getItem('refresh_token'),
+      refreshToken: localStorage.getItem('refresh_token'),
     },
   })
-  localStorage.setItem('access_token', res.data.access_token)
-  localStorage.setItem('refresh_token', res.data.refresh_token)
+  localStorage.setItem('access_token', res.data.data.access_token)
+  localStorage.setItem('refresh_token', res.data.data.refresh_token)
   return res
 }
 
@@ -72,6 +72,14 @@ export async function userSearch(
       email,
       pageNo,
       pageSize,
+    },
+  })
+}
+
+export async function freeze(id: number) {
+  return await axiosInstance.get('/user/freeze', {
+    params: {
+      id,
     },
   })
 }
