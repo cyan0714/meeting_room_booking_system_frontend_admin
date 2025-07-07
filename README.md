@@ -1,6 +1,6 @@
 # 会议室预订系统 - 管理端前端
 
-一个基于 React + TypeScript + Ant Design 的会议室预订系统管理端，提供完整的会议室管理、预订管理、用户管理和数据统计功能。![后端项目在这](https://github.com/cyan0714/meeting_room_booking_system_backend)
+一个基于 React + TypeScript + Ant Design 的会议室预订系统管理端，提供完整的会议室管理、预订管理、用户管理和数据统计功能。[后端项目在这](https://github.com/cyan0714/meeting_room_booking_system_backend) ，[用户端前端在这](https://github.com/cyan0714/meeting_room_booking_system_frontend)
 
 ![meeting_room_manage](./public/meeting_room_manage.png)
 
