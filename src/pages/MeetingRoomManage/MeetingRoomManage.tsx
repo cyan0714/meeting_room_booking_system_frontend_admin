@@ -173,7 +173,7 @@ export function MeetingRoomManage() {
             </Button>
             <Button
               type='primary'
-              style={{ background: 'green' }}
+              style={{ background: 'green', marginLeft: '10px' }}
               onClick={() => setIsCreateModalOpen(true)}>
               添加会议室
             </Button>
