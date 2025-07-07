@@ -1,6 +1,6 @@
 # 会议室预订系统 - 管理端前端
 
-一个基于 React + TypeScript + Ant Design 的会议室预订系统管理端，提供完整的会议室管理、预订管理、用户管理和数据统计功能。
+一个基于 React + TypeScript + Ant Design 的会议室预订系统管理端，提供完整的会议室管理、预订管理、用户管理和数据统计功能。![后端项目在这](https://github.com/cyan0714/meeting_room_booking_system_backend)
 
 ![meeting_room_manage](./public/meeting_room_manage.png)
 
@@ -11,7 +11,6 @@
 - 👥 **用户管理** - 查看、搜索、冻结用户账户
 - 📊 **数据统计** - 会议室使用率和用户预订数据可视化
 - 🔐 **权限控制** - 管理员登录认证和token自动刷新
-- 📱 **响应式设计** - 适配不同屏幕尺寸的现代化UI界面
 
 ## 🛠 技术栈
 
@@ -27,7 +26,7 @@
 
 ### 环境要求
 
-- Node.js >= 16.0.0
+- Node.js >= 18.0.0
 - npm 或 yarn
 
 ### 安装依赖
@@ -47,8 +46,6 @@ yarn install
 ```bash
 npm start
 ```
-
-应用将在 `http://localhost:3000` 启动
 
 ### 构建生产版本
 
@@ -135,33 +132,4 @@ src/
 └── index.css          # 全局样式
 ```
 
-## 🔗 API 接口
 
-系统与后端的主要API接口包括：
-
-- **认证相关**: `/user/admin/login`, `/user/admin/refresh`
-- **用户管理**: `/user/list`, `/user/freeze`, `/user/info`
-- **会议室管理**: `/meeting-room/*`
-- **预订管理**: `/booking/*`
-- **统计数据**: `/statistic/*`
-
-## 🎨 界面预览
-
-- 现代化的管理界面设计
-- 响应式布局适配移动端
-- 直观的数据可视化图表
-- 友好的交互体验
-
-## 🤝 贡献
-
-欢迎提交 Issue 和 Pull Request 来帮助改进项目。
-
-## 📄 许可证
-
-此项目仅供学习和参考使用。
-
-## ⚠️ 注意事项
-
-1. 确保后端服务正常运行在 `localhost:3005`
-2. 首次使用前需要在后端创建管理员账户
-3. 建议在生产环境中修改API地址和安全配置
